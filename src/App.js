@@ -6,7 +6,7 @@ import Todolist2 from './components/Tdolist2';
 
 
 function App() {
-    return <Todolist />;
+    return <Todolist2 />;
 
 }
 export default App;

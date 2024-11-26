@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import FavoritesManager from "./FavoritesManager";
 import Search from "./Search";
 
@@ -14,10 +15,13 @@ const Todolist2 = () => {
     setSelectedNote(note);
   };
 
+ 
+
   return (
     <div style={{ padding: "20px" }}>
       <h1>메모 관리 웹사이트</h1>
       <FavoritesManager notes={notes} onSelectNote={handleSelectNote} />
+      
       <Search notes={notes} onSelectNote={handleSelectNote} />
       {selectedNote && (
         <div style={{ marginTop: "20px" }}>
