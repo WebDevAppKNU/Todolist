@@ -70,7 +70,6 @@ function Todolist() {
     setContent('');
   };
 
-  const remain = (todos[selectedFolder] || []).filter((todo) => !todo.check).length;
 
   return (
     <div style={{ display: 'flex', height: '100vh' }}>
@@ -201,9 +200,6 @@ function Todolist() {
             </div>
           ))}
         </div>
-        <span style={{ fontSize: 20, color: 'blue', marginTop: 20 }}>
-          남은일: {remain}개 / {(todos[selectedFolder] || []).length}개
-        </span>
       </div>
 
       {isModalOpen && (
